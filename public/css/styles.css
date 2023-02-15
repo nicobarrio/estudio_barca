@@ -2,3 +2,83 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
  }
+
+header div.site_header {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header div.site_header div.language {
+    margin-right: auto;
+}
+
+header div.site_header div.site_logo {
+    align-items: center;
+}
+
+header div.site_header div.checkout_login {
+    margin-left: auto;
+}
+
+header div.site_header a{
+    text-decoration: none;
+    color: #000000;
+}
+
+header a:link {
+    color: initial;
+}
+
+header nav ul.site_nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 5%;
+}
+
+header nav ul.site_nav li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:link {
+    color: initial;
+}
+
+footer div.footer_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0;
+}
+
+footer div.footer_container div ul {
+    list-style: none;
+}
+
+footer div.footer_container div ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+footer div.footer_container a:link {
+    color: initial;
+}
+
+footer div.footer_legal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer div.footer_legal p.copyright {
+    margin-right: auto;
+}
+
+footer div.footer_legal p.developer {
+    margin-left: auto;
+}
