@@ -1,28 +1,32 @@
+* {
+    box-sizing: border-box  ;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    background-image: url('/img/background_01.jpg');
+    background-size: cover;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
  }
 
-header div.site_header {
+header div.site_logo {
     display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 }
 
-header div.site_header div.language {
-    margin-right: auto;
-}
-
-header div.site_header div.site_logo {
+header div.site_logo {
     align-items: center;
 }
 
-header div.site_header div.checkout_login {
-    margin-left: auto;
-}
-
-header div.site_header a{
+header div.site_logo a{
     text-decoration: none;
     color: #000000;
 }
@@ -31,16 +35,21 @@ header a:link {
     color: initial;
 }
 
+header div.nav {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 header nav ul.site_nav {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     list-style: none;
     gap: 5%;
 }
 
-header nav ul.site_nav li a {
+header nav ul.site_nav a {
     text-decoration: none;
     color: #000000;
 }
@@ -49,11 +58,48 @@ nav a:link {
     color: initial;
 }
 
+header div.site_user {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-inline-start: auto;
+}
+
+header div.site_user div.language {
+    text-align: right;
+}
+
+header div.site_user div.checkout_login {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: right;
+}
+
+header div.site_user div.language a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header div.site_user div.checkout_login a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header div.site_user a:link {
+    color: initial;
+}
+
+footer {
+    margin-top: auto;
+}
+
 footer div.footer_container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 0;
+    gap: 5%;
+    margin-bottom: 5%;
 }
 
 footer div.footer_container div ul {
@@ -77,8 +123,10 @@ footer div.footer_legal {
 
 footer div.footer_legal p.copyright {
     margin-right: auto;
+    margin-bottom: auto;
 }
 
 footer div.footer_legal p.developer {
     margin-left: auto;
+    margin-bottom: auto;
 }
