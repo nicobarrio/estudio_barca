@@ -24,7 +24,6 @@ header div.site_logo {
 
 header div.site_logo {
     margin-top: 6vh;
-    align-items: center;
 }
 
 header div.site_logo a{
@@ -32,6 +31,9 @@ header div.site_logo a{
     color: #000000;
     font-size: 16px;
     font-weight: bold;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 29%;
 }
 
 header a:link {
@@ -47,12 +49,13 @@ header div.nav {
     margin-left: 6vh;
 }
 
-header div.nav input {
+header div.site_logo input {
     font-size: 14px;
     background: none;
     border: 0px solid;
     padding: 1px 0px 1px 0px;
     border-bottom: 1px solid;
+    margin-left: 6vh;
 }
 
 textarea:focus, input:focus{
