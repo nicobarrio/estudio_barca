@@ -5,11 +5,11 @@
 }
 
 body {
-    background-image: url('/img/background_01.jpg');
+    background-image: url('/img/background_06.jpg');
     background-size: cover;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -23,12 +23,15 @@ header div.site_logo {
 }
 
 header div.site_logo {
+    margin-top: 6vh;
     align-items: center;
 }
 
 header div.site_logo a{
     text-decoration: none;
     color: #000000;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 header a:link {
@@ -39,19 +42,47 @@ header div.nav {
     display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: 6vh;
+    margin-right: 6vh;
+    margin-left: 6vh;
 }
+
+header div.nav input {
+    font-size: 14px;
+    background: none;
+    border: 0px solid;
+    padding: 1px 0px 1px 0px;
+    border-bottom: 1px solid;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+::placeholder {
+    color: black;
+    border: none;
+}
+
 
 header nav ul.site_nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     list-style: none;
-    gap: 5%;
+    gap: 8px;
 }
 
 header nav ul.site_nav a {
     text-decoration: none;
     color: #000000;
+}
+
+header div.nav div.nav_2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
 }
 
 nav a:link {
@@ -63,6 +94,7 @@ header div.site_user {
     flex-wrap: wrap;
     flex-direction: column;
     margin-inline-start: auto;
+    gap: 8px;
 }
 
 header div.site_user div.language {
@@ -74,6 +106,7 @@ header div.site_user div.checkout_login {
     flex-wrap: wrap;
     flex-direction: column;
     text-align: right;
+    gap: 8px;
 }
 
 header div.site_user div.language a {
@@ -99,7 +132,7 @@ footer div.footer_container {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 5%;
-    margin-bottom: 5%;
+    margin-left: 6vh;
 }
 
 footer div.footer_container div ul {
@@ -115,18 +148,24 @@ footer div.footer_container a:link {
     color: initial;
 }
 
+footer div.footer_container div.footer_social {
+    margin-left: auto;
+    margin-right: 6vh;
+    text-align: right;
+}
+
 footer div.footer_legal {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin: 6vh;
+
 }
 
 footer div.footer_legal p.copyright {
     margin-right: auto;
-    margin-bottom: auto;
 }
 
 footer div.footer_legal p.developer {
     margin-left: auto;
-    margin-bottom: auto;
 }
