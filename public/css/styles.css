@@ -165,6 +165,10 @@ footer div.footer_legal {
 
 }
 
+footer div.footer_legal p {
+    font-size: 12px;
+}
+
 footer div.footer_legal p.copyright {
     margin-right: auto;
 }
