@@ -1,122 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudio Barca</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/519fed4cba.css" crossorigin="anonymous">
-</head>
+<!-- HEAD -->
+    <%-  include('./partials/head.ejs', { css_files: ["home"] })%>
+<!-- HEAD -->
 
 <body>
-    <header>
-        <div class="site_logo">
-            <input type="text" placeholder="Buscar" id="buscador" name="buscador" class="input"> <i class="fa-solid fa-magnifying-glass"></i>
-            <a href ="/" class="logo_text">ESTUDIO BARCA</a>
-        </div>
-        <div class="nav">
-                <nav>
-                    <ul class="site_nav">
-                        <li>
-                            <a href="">Mobiliario</a>    
-                        </li>
-                        <li>
-                            <a href="">Arquitectura</a> 
-                        </li>
-                        <li>
-                            <a href="">Nosotros</a> 
-                        </li>
-                        <li>
-                            <a href="">Estudio</a> 
-                        </li>
-                        <li>
-                            <a href="">Prensa</a> 
-                        </li>
-                    </ul>
-                </nav>
-            <div class="site_user">
-                <div class="language">
-                    <a href="">ES | </a>
-                    <a href="">EN</a>
-                </div>
-                <div class="checkout_login">
-                    <a href ="">Cuenta</a>
-                    <a href ="">Carrito</a>
-                </div>
-            </div>
-        </div>
+<!-- HEADER -->
+    <%-  include('./partials/header.ejs', { css_files: ["home"] })%>
+<!-- HEADER -->
         
-    </header>
-    
     <main>
         <section>
 
         </section>
     </main>
-    <footer>
-        <div class="footer_container">
-            <div class="info_footer">
-                <p>Estudio Barca</p>
-                <p>Avenida de Los Colegios, <br> Tigre, Provincia de Buenos Aires</p>
-                <p>info@estudiobarca.com</p>
-                <p>+54 11 7777 9999</p>
-            </div>
-            <!--
-            <div>
-                <ul class="shop_footer">
-                    <p>Mobiliario</p>
-                    <li>
-                        <a href="">Sillas y sillones</a>    
-                    </li>
-                    <li>
-                        <a href="">Mesas y ratonas</a> 
-                    </li>
-                    <li>
-                        <a href="">Escritorios</a> 
-                    </li>
-                    <li>
-                        <a href="">Estanterías</a> 
-                    </li>
-                    <li>
-                        <a href="">Cómodas y consolas</a> 
-                    </li>
-                    <li>
-                        <a href="">Mesas de luz</a> 
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul class="arq_footer">
-                    <p>Arquitectura</p>
-                    <li>
-                        <a href="">Proyectos de arquitectura</a>    
-                    </li>
-                    <li>
-                        <a href="">Proyectos de interiorismo</a> 
-                    </li>
-                </ul>
-            </div>
-            -->
-            <div class="footer_social">
-                <ul>
-                    <p>Social</p>
-                    <li>
-                        <a href="http://instagram.com/estudiobarca" target="_blank" rel="noopener noreferrer">Instagram</a>    
-                    </li>
-                    <li>
-                        <a href="http://tiktok.com/@estudiobarca" target="_blank" rel="noopener noreferrer">TikTok</a> 
-                    </li>
-                    <li>
-                        <a href="http://pinterest.com/estudiobarca" target="_blank" rel="noopener noreferrer">Pinterest</a> 
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer_legal">
-            <p class="copyright">©2023 Estudio Barca. Todos los derechos reservados. </p>
-            <p class="developer">Desarrollado por Barrn</p>
-        </div>
-    </footer>
+
+<!-- FOOTER -->
+    <%-  include('./partials/footer.ejs', { css_files: ["home"] })%>
+<!-- FOOTER -->
 </body>
 </html>

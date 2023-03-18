@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD -->
+    <%-  include('../partials/head.ejs', { css_files: ["products"] })%>
+<!-- HEAD -->
+
+<body>
+    <!-- HEADER -->
+        <%-  include('../partials/header.ejs', { css_files: ["products"] })%>
+    <!-- HEADER -->
+            
+    <main>
+        <%  Product.forEach((p)=>{ %>
+            <section class="product_grid">
+                <article class="product_card">
+                    <img src="<%= product[i].image %>" class="product_image">
+                    <h2 class="product_name"><%= product[i].name %></h2>
+                    <p class="product_price"><%= product[i].price %></p>
+                    <p class="product_description"><%= product[i].description %></p>
+                    <p class="product_description"><%= product[i].material %></p>
+                    <p class="product_description"><%= product[i].color %></p>
+                    <p class="product_description"><%= product[i].dimensions %></p>
+                </article>
+            </section>
+        <%  }) %>        
+    </main>
+        
+    <!-- FOOTER -->
+        <%-  include('../partials/footer.ejs', { css_files: ["products"] })%>
+    <!-- FOOTER -->
+</body>
+</html>

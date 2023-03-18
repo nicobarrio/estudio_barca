@@ -1,7 +1,7 @@
 const path = require('path');
 
 const homeController = {
-    index: (req, res)=>{
+    index: (req, res) => {
         res.render(path.join(__dirname, '../views/home'));
     }
 }

@@ -10,6 +10,8 @@ INSTALL DEPENDENCIES
 3. npm install ejs
 4. npm install method-override
 5. npm install multer 
+6. npm install -g --save sequelize sequelize-cli
+7. npm install --save mysql2
 
 CREATE APP.JS
 1. Requerir EXPRESS
