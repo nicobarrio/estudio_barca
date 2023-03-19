@@ -23,9 +23,8 @@ module.exports = function(sequelize, dataTypes) {
             type: dataTypes.TEXT,
             allowNull: false
         },
-        dimensions: {
+        dimension: {
             type: dataTypes.TEXT,
-            allowNull: false
         },
         price: {
             type: dataTypes.DECIMAL,
@@ -39,13 +38,16 @@ module.exports = function(sequelize, dataTypes) {
             type: dataTypes.STRING,
             allowNull: false
         },
+        images: {
+            type: dataTypes.STRING,
+            allowNull: false
+        },
         category_id: {
             type: dataTypes.INTEGER,
             allowNull: false
         },
         subcategory_id: {
             type: dataTypes.INTEGER,
-            allowNull: false
         },
 
     }
@@ -59,17 +61,15 @@ module.exports = function(sequelize, dataTypes) {
 
     Product.associate = function(models) {
         Product.belongsTo(models.Category, {
-            as: "products",
+            as: "category",
             foreignKey: "category_id",
             timestamps: false
-        }),
+        })
         Product.belongsToMany(models.Order, { 
-            through: "order_id",
+            through: "order_product",
             timestamps: false
         });
     }
-
-    
 
     return Product;
 }

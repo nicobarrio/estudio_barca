@@ -9,20 +9,21 @@
         <%-  include('../partials/header.ejs', { css_files: ["products"] })%>
     <!-- HEADER -->
             
-    <main>
-        <%  Product.forEach((p)=>{ %>
+    <main>      
+        <% products.forEach((product) => { %>
             <section class="product_grid">
-                <article class="product_card">
-                    <img src="<%= product[i].image %>" class="product_image">
-                    <h2 class="product_name"><%= product[i].name %></h2>
-                    <p class="product_price"><%= product[i].price %></p>
-                    <p class="product_description"><%= product[i].description %></p>
-                    <p class="product_description"><%= product[i].material %></p>
-                    <p class="product_description"><%= product[i].color %></p>
-                    <p class="product_description"><%= product[i].dimensions %></p>
-                </article>
+              <article class="product_card">
+                <img src="<%= product.image %>" class="product_image">
+                <img src="<%= product.images %>" class="product_image">
+                <h2><%= product.name %></h2>
+                <p>$<%= product.price %></p>
+                <p><%= product.description %></p>
+                <p><%= product.material %></p>
+                <p><%= product.color %></p>
+                <p><%= product.dimension %></p>
+              </article>
             </section>
-        <%  }) %>        
+          <% }); %>
     </main>
         
     <!-- FOOTER -->

@@ -10,6 +10,10 @@ const publicPath = path.join(__dirname ,'/public');
 const homeRoute = require('./routes/homeRoute.js');
 const productsRoute = require('./routes/productsRoute.js')
 
+// CAPTURAR INFO DE POST //
+app.use(express.urlencoded( { extended:false } ));
+app.use(express.json());
+
 // CONFIGURAR PUERTO //
 app.listen(port, () => {
     console.log('Server 3060 is working');
