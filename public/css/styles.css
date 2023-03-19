@@ -15,14 +15,19 @@ body {
  }
 
 header div.site_logo {
+    position: fixed;
     display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    gap: 12%;
+    justify-content: left;
 }
 
 header div.site_logo {
-    margin-top: 6vh;
+    padding-top: 6vh;
+    width: 100%;
+    padding-bottom: 6vh;
+    background-color: white;
 }
 
 header div.site_logo a{
@@ -40,12 +45,14 @@ header a:link {
 }
 
 header div.nav {
+    position: fixed;
     display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 3vh;
+    top: 15%;
     margin-right: 6vh;
-    margin-left: 6vh;
+    margin-left: 6vh; 
+    z-index: 1;
 }
 
 header div.site_logo input {
@@ -53,8 +60,11 @@ header div.site_logo input {
     background: none;
     border: 0px solid;
     padding: 1px 0px 1px 0px;
-    border-bottom: 1px solid;
     margin-left: 6vh;
+}
+
+header div.site_logo img {
+    width: 20%;
 }
 
 textarea:focus, input:focus{
@@ -110,11 +120,15 @@ nav ul li:hover > ul{
 }
 
 header div.site_user {
+    position: fixed;
     display: flex; 
     flex-wrap: wrap;
     flex-direction: column;
     margin-inline-start: auto;
+    top: 15%;
+    margin-right: 6vh;
     gap: 8px;
+    inline-size: -webkit-fill-available;
 }
 
 header div.site_user div.language {

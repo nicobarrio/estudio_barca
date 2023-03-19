@@ -1,0 +1,25 @@
+div.product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+.extra_images {
+    margin-left: 40%;
+}
+
+div.product  img {
+    width: 30%;
+}
+
+
+section.product_image img {
+    width: 60%;
+}
+
+section.product_detail {
+    margin-right: 15vh;
+}

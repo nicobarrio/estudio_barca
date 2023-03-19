@@ -14,7 +14,8 @@ router.post('/create',
         { name: 'image', maxCount: 1 },
         { name: 'images', maxCount: 6 }]),
     productsController.save);
-router.get("/products", productsController.update);
-router.delete("/products", productsController.delete);
+router.get("/edit/:id", productsController.edit)
+router.post("/edit/:id", productsController.update);
+router.delete("/delete/:id", productsController.delete);
 
 module.exports = router;
