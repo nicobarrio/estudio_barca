@@ -2,7 +2,7 @@ header div.site_logo {
     background-color: white;
 }
 
-.login_box {
+.register_box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,18 +11,18 @@ header div.site_logo {
     align-items: center;
 }
 
-.login_box p {
+.register_box p {
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.login_form {
+.register_form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-.login_form input {
+.register_form input {
     border: 0px;
     border-bottom: 1px solid rgb(185, 185, 185);
     margin-bottom: 10px;
@@ -30,7 +30,7 @@ header div.site_logo {
     padding-bottom: 5px;
 }
 
-.login_form button {
+.register_form button {
     width: 0%;
     border: 0px;
     background-color: white;
@@ -43,12 +43,11 @@ header div.site_logo {
 .buttons {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 20px;
 }
 
-.forgotten_password a, .register_link a {
+.buttons label {
     text-decoration: none;
     color: rgb(185, 185, 185);
 }

@@ -27,7 +27,6 @@ header div.site_logo {
     padding-top: 6vh;
     width: 100%;
     padding-bottom: 6vh;
-    background-color: white;
 }
 
 header div.site_logo a{
@@ -63,7 +62,7 @@ header div.site_logo input {
     margin-left: 6vh;
 }
 
-header div.site_logo img {
+header div.site_logo a img {
     width: 20%;
 }
 

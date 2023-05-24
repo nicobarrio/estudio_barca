@@ -5,7 +5,8 @@ const productsController = {
     list: (req, res) => {
         db.Product.findAll()
             .then(function(products) {
-                res.render(path.join(__dirname, '../views/products/products.ejs'), { products:products });
+                console.log(products); // Agrega este console.log para verificar los productos recuperados
+                res.render(path.join(__dirname, '../views/products/products.ejs'), { products: products });
             })
             .catch(err => {
                 console.log(err);
@@ -95,7 +96,7 @@ const productsController = {
                 id: req.params.id
             }
         })
-        res.redirect(path.join(__dirname, '../views/products/products.ejs'))
+        res.redirect('/products');
     },
 }
 

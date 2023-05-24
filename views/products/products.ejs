@@ -9,19 +9,24 @@
         <%-  include('../partials/header.ejs', { css_files: ["products"] })%>
     <!-- HEADER -->
             
-    <main>      
-        <% products.forEach((product) => { %>
-            <section class="product_grid">
-              <article class="product_card">
+    <main>
+        <section class="product_grid">
+            <% console.log(products); %>
+            <% products.forEach((product, index) => { %>
+    
+            <article class="product_card">
                 <a href="/products/<%= product.id %>">
-                    <img src="/img/products/product-1679185466723.png" class="product_image">
-                    <a href="#" class="product_title"><span><%= product.name %></span></a>  
+                    <img src="/img/products/<%= product.image %>" class="product_image">
+                    <a href="#" class="product_title"><span><%= product.name %></span></a>
                 </a>
-              </article>
-            </section>
-          <% }); %>
+            </article>
+            <% if ((index + 1) % 3 === 0) { %>
+        </section>
+        <section class="product_grid">
+            <% } %>
+            <% }); %>
+        </section>
     </main>
-        
     <!-- FOOTER -->
         <%-  include('../partials/footer.ejs', { css_files: ["products"] })%>
     <!-- FOOTER -->
