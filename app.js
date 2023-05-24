@@ -9,6 +9,7 @@ const publicPath = path.join(__dirname ,'/public');
 // REQUERIR RUTAS //
 const homeRoute = require('./routes/homeRoute.js');
 const productsRoute = require('./routes/productsRoute.js')
+const usersRoute = require('./routes/usersRoute.js')
 
 // CAPTURAR INFO DE POST //
 app.use(express.urlencoded( { extended:false } ));
@@ -26,4 +27,5 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(publicPath)); 
 
 app.use('/', homeRoute);
-app.use('/', productsRoute)
+app.use('/', productsRoute);
+app.use('/', usersRoute);
