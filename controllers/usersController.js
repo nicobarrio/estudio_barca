@@ -7,6 +7,9 @@ const usersController = {
     },
     register: (req, res) => {
         res.render(path.join(__dirname, '../views/users/register'))
+    },
+    account: (req, res) => {
+        res.render(path.join(__dirname, '../views/users/account'))
     }
 }
 

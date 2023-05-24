@@ -25,6 +25,19 @@ section.product_image img {
     width: 60%;
 }
 
-section.product_detail {
-    margin-right: 15vh;
+section p { 
+    margin-top: 8px;
+}
+
+section p.description {
+    margin-top: 20px;
+}
+
+button {
+    border: 0px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+
 }
