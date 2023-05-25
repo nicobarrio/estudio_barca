@@ -1,8 +1,3 @@
-header div.site_logo {
-    background-color: white;
-    opacity: 0.98;
-}
-
 div.product{
     display: flex;
     flex-wrap: wrap;

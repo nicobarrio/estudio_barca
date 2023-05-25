@@ -4,7 +4,8 @@ body {
 }
 
 header div.site_logo {
-    background-color: white;
+    margin-top: 6vh;
+    width: 100%;
 }
 
 main {
