@@ -13,7 +13,6 @@ header div.site_logo {
 
 .register_box p {
     margin-bottom: 20px;
-    font-weight: bold;
 }
 
 .register_form {
@@ -31,7 +30,7 @@ header div.site_logo {
 }
 
 .register_form button {
-    width: 0%;
+    width: 23%;
     border: 0px;
     background-color: white;
     cursor: pointer;

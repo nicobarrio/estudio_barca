@@ -13,13 +13,13 @@ header div.site_logo {
 
 .login_box p {
     margin-bottom: 20px;
-    font-weight: bold;
 }
 
 .login_form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 20%;
 }
 
 .login_form input {
@@ -46,6 +46,7 @@ header div.site_logo {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
+    width: 20%;
 }
 
 .forgotten_password a, .register_link a {
