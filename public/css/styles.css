@@ -137,7 +137,7 @@ header div.site_user div.checkout_login {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    text-align: right;
+    align-content: flex-end;
     gap: 8px;
 }
 
@@ -147,8 +147,10 @@ header div.site_user div.language a {
 }
 
 header div.site_user div.checkout_login a {
+    display: flex;
     text-decoration: none;
     color: #000000;
+    justify-content: right;
 }
 
 header div.site_user a:link {

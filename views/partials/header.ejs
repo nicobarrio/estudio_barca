@@ -5,7 +5,12 @@
     <div class="nav">
             <nav>
                 <ul class="site_nav">
-                    <input type="text" placeholder="Buscar" id="buscador" name="buscador" class="input"> <i class="fa-solid fa-magnifying-glass"></i>
+                    <form action="/products/searcher" method="get">
+                        <input type="text" placeholder="Buscar" id="searcher" name="searcher" class="input"> 
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
                     <li>
                         <a href="/products"><span>Mobiliario</span></a>
                         <ul class="dropdown">
@@ -74,7 +79,7 @@
         </div>
         <div class="checkout_login">
             <a href ="/login">Iniciar Sesión</a>
-            <a href ="">Carrito</a>
+            <a href ="/cart">Carrito (0)</a>
         </div>
     </div>
 </header>
