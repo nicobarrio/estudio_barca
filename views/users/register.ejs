@@ -29,16 +29,21 @@
                     <div class="t&c">
                         <input type="checkbox" name="promo" id="promo">
                         <label for="t&c">
-                            He leído y acepto la <a href="#">Política de Privacidad y Cookies</a> 
+                            He leído y acepto la <a href="#">Política de Privacidad y Cookies</a>
                         </label>
                     </div>
                 </div>
-                
-                <button type="submit" title="create_account" name="create_account" id="register_button">Crear cuenta</button>
+
+                <button type="submit" title="create_account" name="create_account" id="register_button">Crear
+                    cuenta</button>
             </form>
         </div>
 
 
     </main>
-
+    <!-- FOOTER -->
+    <%-  include('../partials/footer.ejs', { css_files: ["register"] })%>
+    <!-- FOOTER -->
 </body>
+
+</html>

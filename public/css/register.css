@@ -1,5 +1,14 @@
 header div.site_logo {
     background-color: white;
+    opacity: 0.97;
+}
+
+main {
+    margin-bottom: 60vh;
+}
+
+header div.site_logo {
+    background-color: white;
 }
 
 .register_box {

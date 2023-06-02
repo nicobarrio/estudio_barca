@@ -10,6 +10,14 @@
   <!-- HEADER -->
 
   <main>
+    <div class="admin_buttons">
+      <a href="/products/edit/<%= product.id %>">
+        <button>Editar</button>
+      </a>
+      <form action="/products/delete/<%= product.id %>">
+        <button type="submit">Borrar</button>
+      </form>
+    </div>
     <div class="product">
       <img src="/img/products/<%= product.image %>">
       <section class="product_detail">
@@ -22,16 +30,10 @@
         <form action="" method="post">
           <!-- <label for="quantity">Cantidad:</label>
           <input type="number" name="quantity" value="1" min="1" max="10"> -->
-          <button type="submit">Añadir al carrito</button>
+          <button class="add_to_cart" type="submit">Añadir al carrito</button>
         </form>
       </section>
     </div>
-    <a href="/products/edit/<%= product.id %>">
-      <button>Editar</button>
-    </a>
-    <form action="/products/delete/<%= product.id %>">
-      <button type="submit">Borrar</button>
-    </form>
     <img src="/img/products/<%= product.images %>" class="extra_images">
 
     <!--

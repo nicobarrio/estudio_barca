@@ -4,12 +4,12 @@ body {
 }
 
 header div.site_logo {
-    margin-top: 6vh;
-    width: 100%;
+    background-color: white;
+    opacity: 0.97;
 }
 
 main {
-    margin-top: 20vh;
+    margin-top: 18vh;
     margin-bottom: 20vh;
 }
 
