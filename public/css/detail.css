@@ -1,11 +1,30 @@
-main {
-    nmargin-bottom: 20vh;
-}
-
 header div.site_logo {
     background-color: white;
     opacity: 0.97;
 }
+
+header div.nav nav ul.site_nav input::placeholder {
+    color: rgb(124, 124, 124);
+}
+
+header nav ul.site_nav a, header div.nav nav ul.site_nav input::placeholder, header div.site_user div.checkout_login a, header div.site_user div.language a {
+    color: rgb(124, 124, 124);
+}
+
+header nav ul.site_nav a, header div.nav nav ul.site_nav input::placeholder, header div.site_user div.checkout_login a, header div.site_user div.language a {
+    transition-duration: 0s;
+    transition-property: color;
+}
+
+header nav ul.site_nav a:hover, header div.nav nav ul.site_nav input:hover, header div.site_user div.checkout_login a:hover, header div.site_user div.language a:hover {
+    color: black;
+}
+
+main {
+    nmargin-bottom: 20vh;
+}
+
+
 
 div.product{
     display: flex;

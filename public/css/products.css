@@ -8,6 +8,23 @@ header div.site_logo {
     opacity: 0.97;
 }
 
+header div.nav nav ul.site_nav input::placeholder {
+    color: rgb(124, 124, 124);
+}
+
+header nav ul.site_nav a, header div.nav nav ul.site_nav input::placeholder, header div.site_user div.checkout_login a, header div.site_user div.language a {
+    color: rgb(124, 124, 124);
+}
+
+header nav ul.site_nav a, header div.nav nav ul.site_nav input::placeholder, header div.site_user div.checkout_login a, header div.site_user div.language a {
+    transition-duration: 0s;
+    transition-property: color;
+}
+
+header nav ul.site_nav a:hover, header div.nav nav ul.site_nav input:hover, header div.site_user div.checkout_login a:hover, header div.site_user div.language a:hover {
+    color: black;
+}
+
 main {
     margin-top: 18vh;
     margin-bottom: 20vh;
@@ -50,7 +67,7 @@ main {
 
 .product_image{
     transition-duration: 0s;
-    transition-property: font-weight;
+    transition-property: border;
 }
 
 .product_image:hover {
