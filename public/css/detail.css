@@ -14,7 +14,7 @@ div.product{
     gap: 20px;
     justify-content: center;
 }
-
+ 
 .extra_images {
     margin-left: 40%;
 }
@@ -44,7 +44,26 @@ button {
 }
 
 button.add_to_cart {
+    border: 1px solid rgb(185, 185, 185);
+    background-color: white;
+    cursor: pointer;
     margin-top: 20px;
+    padding: 10px 0px 10px 0px;
+    color: rgb(185, 185, 185);
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+button.add_to_cart {
+    transition-duration: 0s;
+    transition-property: font-weight;
+}
+
+button.add_to_cart:hover {
+    border: 1px solid black;
+    color: black;
 }
 
 div.admin_buttons {

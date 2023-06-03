@@ -14,7 +14,7 @@ main {
 }
 
 .product_grid {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
@@ -34,9 +34,27 @@ main {
     margin-left: 0;
 }
 
+.product_card{
+    transition-duration: 0s;
+    transition-property: font-weight;
+}
+
+.product_card:hover {
+    font-weight: bold;
+}
+
 .product_image {
     width: 100%;
     margin-bottom: 8px;
+}
+
+.product_image{
+    transition-duration: 0s;
+    transition-property: font-weight;
+}
+
+.product_image:hover {
+    border: 1px solid black;
 }
 
 .product_title {
