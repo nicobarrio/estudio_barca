@@ -1,2 +1,2 @@
 # estudio_barca
-architecture and furniture eCommerce website
+furniture eCommerce and architecture studio website
