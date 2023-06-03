@@ -19,7 +19,6 @@ header div.site_logo {
     display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 12%;
     justify-content: left;
     z-index: 2;
     width: 100%;
