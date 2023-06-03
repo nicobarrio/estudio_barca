@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- HEAD -->
-    <%-  include('../partials/head.ejs', { css_files: ["detail"] })%>
-  <!-- HEAD -->
+<!-- HEAD -->
+<%-  include('../partials/head.ejs', { css_files: ["detail"] })%>
+<!-- HEAD -->
 
-  <body>
-    <!-- HEADER -->
-      <%-  include('../partials/header.ejs', { css_files: ["detail"] })%>
-    <!-- HEADER -->
+<body>
+  <!-- HEADER -->
+  <%-  include('../partials/header.ejs', { css_files: ["detail"] })%>
+  <!-- HEADER -->
 
-    <main>
+  <main>
+    <div class="admin_buttons">
       <a href="/products/edit/<%= product.id %>">
         <button>Editar</button>
       </a>
       <form action="/products/delete/<%= product.id %>">
         <button type="submit">Borrar</button>
       </form>
-        <div class="product">
-          <img src="/img/products/product-1679185466723.png">
-          <section class="product_detail">
-            <p><%= product.name %></p>
-            <p>$<%= product.price %></p>
-            <p>Descripción:</p>
-            <p><%= product.description %></p>
-            <p>Material:</p>
-            <p><%= product.material %></p>
-            <p>Color:</p>
-            <p><%= product.color %></p>
-            <p>Dimensiones:</p> 
-            <p><%= product.dimension %></p>
-            <form action="" method="post">
-              <label for="quantity">Cantidad:</label>
-              <input type="number" name="quantity" value="1" min="1" max="10">
-              <button type="submit">Añadir al carrito</button>
-            </form>
-          </section>
-        </div>
-        <img src="/img/products/product-1679185466723.png" class="extra_images">
+    </div>
+    <div class="product">
+      <img src="/img/products/<%= product.image %>">
+      <section class="product_detail">
+        <p><%= product.name %></p>
+        <p>$<%= product.price %></p>
+        <p class="description">Descripción: <%= product.description %></p>
+        <p>Material: <%= product.material %></p>
+        <p>Color: <%= product.color %></p>
+        <p>Dimensiones: <%= product.dimension %></p>
+        <form action="" method="post">
+          <!-- <label for="quantity">Cantidad:</label>
+          <input type="number" name="quantity" value="1" min="1" max="10"> -->
+          <button class="add_to_cart" type="submit">Añadir al carrito</button>
+        </form>
+      </section> 
+    </div>
+    <img src="/img/products/<%= product.images %>" class="extra_images">
 
-      <!--
+    <!--
         <img src="<%= product.image %>" class="product_image">
         <img src="<%= product.images %>" class="product_image">
       -->
-    </main>
+  </main>
 
-    <!-- FOOTER -->
-      <%-  include('../partials/footer.ejs', { css_files: ["detail"] })%>
-    <!-- FOOTER -->
+  <!-- FOOTER -->
+  <%-  include('../partials/footer.ejs', { css_files: ["detail"] })%>
+  <!-- FOOTER -->
 
-  </body>
+</body>
+
 </html>

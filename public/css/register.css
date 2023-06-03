@@ -1,0 +1,87 @@
+header div.site_logo {
+    background-color: white;
+    opacity: 0.97;
+}
+
+main {
+    margin-bottom: 60vh;
+}
+
+header div.site_logo {
+    background-color: white;
+}
+
+.register_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20vh;
+    align-items: center;
+}
+
+.register_box p {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.register_form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30%;
+}
+
+.register_form input {
+    border: 0px;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.register_form input::placeholder {
+    color: rgb(185, 185, 185);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.register_form button {
+    border: 1px solid rgb(185, 185, 185);
+    color: rgb(185, 185, 185);
+    background-color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.register_form button {
+    transition-duration: 0s;
+    transition-property: font-weight;
+}
+
+.register_form button:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.buttons label {
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.buttons label a {
+    color: initial;
+}
+

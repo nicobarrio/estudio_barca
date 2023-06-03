@@ -1,0 +1,36 @@
+header div.site_logo {
+    background-color: white;
+    opacity: 0.97;
+}
+
+main {
+    margin-bottom: 60vh;
+}
+
+section {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    flex-direction: column; 
+    margin-top: 20vh; 
+    align-items: center;
+}
+
+.border-top {
+    border-top: 1px solid whitesmoke;
+}
+
+.border-bottom {
+    border-bottom: 1px solid whitesmoke;
+}
+
+p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+button {
+    border: 0px;
+    background-color: white;
+    font-weight: bold;
+}

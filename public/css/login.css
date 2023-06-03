@@ -1,0 +1,95 @@
+header div.site_logo {
+    background-color: white;
+    opacity: 0.97;
+}
+
+main {
+    margin-bottom: 60vh;
+}
+
+header div.site_logo {
+    background-color: white;
+}
+
+.login_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20vh;
+    align-items: center;
+}
+
+.login_box p {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.login_form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30%;
+}
+
+.login_form input {
+    border: 0px;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.login_form input::placeholder {
+    color: rgb(185, 185, 185);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.login_form button {
+    border: 1px solid rgb(185, 185, 185);
+    background-color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 0px 10px 0px;
+    color: rgb(185, 185, 185);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.login_form button {
+    transition-duration: 0s;
+    transition-property: font-weight;
+}
+
+.login_form button:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 30%;
+}
+
+.forgotten_password a, .register_link a {
+    text-decoration: none;
+    color: black;
+}
+
+.forgotten_password a, .register_link a {
+    transition-duration: 0s;
+    transition-property: font-weight;
+}
+
+.forgotten_password a:hover, .register_link a:hover {
+    color: black;
+    font-weight: bold;
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD -->
+<%-  include('../partials/head.ejs', { css_files: ["register"] })%>
+<!-- HEAD -->
+
+<body>
+    <!-- HEADER -->
+    <%-  include('../partials/header.ejs', { css_files: ["register"] })%>
+    <!-- HEADER -->
+
+    <main>
+        <div class="register_box">
+            <p>Datos personales</p>
+            <form class="register_form" action="/login" method="post" id="register_form">
+                <input type="text" id="name" name="name" placeholder="Nombre">
+                <input type="text" id="lastname" name="lastname" placeholder="Apellido">
+                <input type="email" id="email" name="email" placeholder="Correo electrónico">
+                <input type="password" id="password" name="password" placeholder="Contraseña">
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Repetir contraseña">
+
+                <div class="buttons">
+                    <div class="promo">
+                        <input type="checkbox" name="promo" id="promo">
+                        <label for="promo" class="promo_radio">
+                            Quiero recibir noticias y promociones de Estudio Barca
+                        </label>
+                    </div>
+                    <div class="t&c">
+                        <input type="checkbox" name="promo" id="promo">
+                        <label for="t&c">
+                            He leído y acepto la <a href="#">Política de Privacidad y Cookies</a>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" title="create_account" name="create_account" id="register_button">Crear
+                    cuenta</button>
+            </form>
+        </div>
+
+
+    </main>
+    <!-- FOOTER -->
+    <%-  include('../partials/footer.ejs', { css_files: ["register"] })%>
+    <!-- FOOTER -->
+</body>
+
+</html>

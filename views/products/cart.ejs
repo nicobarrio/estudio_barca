@@ -1,0 +1,41 @@
+<!-- HEAD -->
+<%-  include('../partials/head.ejs', { css_files: ["cart"] })%>
+<!-- HEAD -->
+
+<body>
+    <!-- HEADER -->
+    <%-  include('../partials/header.ejs', { css_files: ["cart"] })%>
+    <!-- HEADER -->
+
+    <main>
+        <div class="cart">
+            <p class="title">Carrito</p>
+            <div class="specs">
+                <p>Item</p>
+                <p>Cantidad</p>
+                <p>Precio</p>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <p>Descripción</p>
+                <button>+</button>
+                <button>-</button>
+                <p>400</p>
+            </div>
+            <div class="summary">
+                <div class="summary_total">
+                    <p>Subtotal</p>
+                    <p>Envío</p>
+                    <p>Total</p>
+                </div>
+                <button>Pagar</button>
+            </div>
+            
+        </div> 
+    </main>
+    <!-- FOOTER -->
+    <%-  include('../partials/footer.ejs', { css_files: ["login"] })%>
+    <!-- FOOTER -->
+</body>
+
+</html>

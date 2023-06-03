@@ -1,8 +1,10 @@
+main {
+    margin-bottom: 20vh;
+}
+
 header div.site_logo {
-    padding-top: 6vh;
-    width: 100%;
-    padding-bottom: 6vh;
     background-color: white;
+    opacity: 0.97;
 }
 
 div.product{
@@ -11,9 +13,8 @@ div.product{
     flex-direction: row;
     gap: 20px;
     justify-content: center;
-    margin-top: 15vh;
 }
-
+ 
 .extra_images {
     margin-left: 40%;
 }
@@ -27,6 +28,50 @@ section.product_image img {
     width: 60%;
 }
 
-section.product_detail {
-    margin-right: 15vh;
+section p { 
+    margin-top: 8px;
+}
+
+section p.description {
+    margin-top: 20px;
+}
+
+button {
+    border: 0px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.add_to_cart {
+    border: 1px solid rgb(185, 185, 185);
+    background-color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 0px 10px 0px;
+    color: rgb(185, 185, 185);
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+button.add_to_cart {
+    transition-duration: 0s;
+    transition-property: font-weight;
+}
+
+button.add_to_cart:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+div.admin_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 18vh;
 }
