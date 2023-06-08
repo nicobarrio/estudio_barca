@@ -10,7 +10,7 @@
     <!-- HEADER -->
             
     <main>
-        <section class="product_grid">
+        <section class="product_grid_desktop">
             <% console.log(products); %>
             <% products.forEach((product, index) => { %>
     
@@ -22,7 +22,24 @@
             </article>
             <% if ((index + 1) % 3 === 0) { %>
         </section>
-        <section class="product_grid">
+        <section class="product_grid_desktop">
+            <% } %>
+            <% }); %>
+        </section>
+
+        <section class="product_grid_mobile">
+            <% console.log(products); %>
+            <% products.forEach((product, index) => { %>
+    
+            <article class="product_card_mobile">
+                <a href="/products/<%= product.id %>">
+                    <img src="/img/products/<%= product.image %>" class="product_image">
+                    <a href="#" class="product_title"><span><%= product.name %></span></a>
+                </a>
+            </article>
+            <% if ((index + 1) % 2 === 0) { %>
+        </section>
+        <section class="product_grid_mobile">
             <% } %>
             <% }); %>
         </section>

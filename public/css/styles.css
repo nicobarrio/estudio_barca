@@ -232,7 +232,7 @@ footer div.footer_container div.footer_social ul li a:hover {
 footer div.footer_legal {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 6vh;
     margin-right: 6vh;
     margin-top: 15px;
