@@ -1,3 +1,112 @@
+
+header div.site_logo {
+    background-color: white;
+    opacity: 0.97;
+}
+
+header div.nav nav ul.site_nav input::placeholder {
+    color: rgb(124, 124, 124);
+}
+
+header nav ul.site_nav a, header div.nav nav ul.site_nav input::placeholder, header div.site_user div.checkout_login a, header div.site_user div.language a {
+    color: rgb(124, 124, 124);
+}
+
+header nav ul.site_nav a, header div.nav nav ul.site_nav input::placeholder, header div.site_user div.checkout_login a, header div.site_user div.language a {
+    transition-duration: 0s;
+    transition-property: color;
+}
+
+header nav ul.site_nav a:hover, header div.nav nav ul.site_nav input:hover, header div.site_user div.checkout_login a:hover, header div.site_user div.language a:hover {
+    color: black;
+}
+
+main {
+    margin-bottom: 20vh;
+}
+
+div.product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+div.product .product_detail {
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+ 
+.extra_images {
+    margin-top: 8px;
+    width: 100%;
+}
+
+div.product  img {
+    width: 100%;
+}
+
+section.product_image img {
+    width: 60%;
+}
+
+section p { 
+    margin-top: 8px;
+}
+
+section p.description {
+    margin-top: 20px;
+}
+
+button {
+    border: 0px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.add_to_cart {
+    border: 1px solid rgb(185, 185, 185);
+    background-color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 0px 10px 0px;
+    color: rgb(185, 185, 185);
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+button.add_to_cart {
+    transition-duration: 0s;
+    transition-property: font-weight;
+}
+
+button.add_to_cart:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+div.admin_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 9vh;
+}
+
+/*  TABLETS */
+@media (min-width: 481px) {
+
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+
 header div.site_logo {
     background-color: white;
     opacity: 0.97;
@@ -24,8 +133,6 @@ main {
     nmargin-bottom: 20vh;
 }
 
-
-
 div.product{
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +148,6 @@ div.product{
 div.product  img {
     width: 30%;
 }
-
 
 section.product_image img {
     width: 60%;

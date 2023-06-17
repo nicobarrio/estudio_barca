@@ -52,9 +52,15 @@ header div.nav {
     display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
-    top: 12vh;
-    margin-left: 6vh; 
+    margin-top: 8vh;
     z-index: 1;
+    width: 100%;
+    height: 60%;
+    background-color: white;
+}
+
+nav {
+    margin-left: 3vh;
 }
 
 header div.nav nav ul.site_nav input {
@@ -95,6 +101,7 @@ header nav ul.site_nav {
     flex-direction: column;
     list-style: none;
     gap: 8px;
+    margin-top: 3vh;
 }
 
 header nav ul.site_nav a {
@@ -135,21 +142,25 @@ header div.site_user {
     position: fixed;
     display: flex; 
     flex-wrap: wrap;
-    flex-direction: column-reverse;
-    margin-left: 6vh;
-    top: 80vh;
+    flex-direction: column;
+    margin-top: 50vh;
     gap: 8px;
+    background-color: white;
+    width: 100%;
+    height: 50%;
 }
 
-header div.site_user div.language {
+header div.language {
+    margin-top: 32vh;
+    margin-left: 3vh    
 }
 
 header div.site_user div.checkout_login {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: flex-end;
     gap: 8px;
+    margin-left: 3vh
 }
 
 header div.site_user div.language a {
@@ -185,7 +196,7 @@ footer div.footer_container {
     flex-wrap: wrap;
     flex-direction: column-reverse;
     gap: 5%;
-    margin-left: 6vh;
+    margin-left: 3vh;
 }
 
 footer div.footer_container p {
@@ -233,8 +244,8 @@ footer div.footer_legal {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 6vh;
-    margin-right: 6vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
     margin-top: 15px;
     margin-bottom: 3vh;
 
