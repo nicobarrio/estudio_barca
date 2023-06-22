@@ -208,6 +208,7 @@ header div.site_user {
     position: fixed;
     display: flex; 
     flex-wrap: wrap;
+    justify-content: flex-end;
     z-index: 1;
     flex-direction: column;
     margin-top: 50vh;
@@ -227,12 +228,12 @@ header div.site_user div.checkout_login {
     flex-direction: column;
     gap: 8px;
     margin-left: 3vh;
+    margin-bottom: 12vh;
     opacity: 0;
     transition: 0.9s;
 }
 
 header div.language {
-    margin-top: 32vh;
     margin-left: 3vh;
     opacity: 0;
     transition: 0.9s;

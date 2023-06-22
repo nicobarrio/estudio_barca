@@ -28,38 +28,39 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
-    margin-top: 20vh;
+    margin-top: 9vh;
     align-items: center;
 }
 
 .cart p.title {
-    width: 40%;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .specs {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 40%;
+    width: 100%;
     justify-content: space-between;
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(185, 185, 185);
+    margin-left: 3vh;
+    margin-right: 3vh;
 }
-
-
 
 .item {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 40%;
+    width: 100%;
     justify-content: space-between;
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(185, 185, 185);
+    margin-left: 3vh;
+    margin-right: 3vh;
 }
 
 .item button {
@@ -74,7 +75,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
+    margin-left: 3vh;
+    margin-right: 3vh;
 }
 
 .summary button {
@@ -85,9 +88,9 @@ main {
     padding: 10px 0px 10px 0px;
     color: rgb(185, 185, 185);
     font-weight: bold;
-    width: 30%;
     text-transform: uppercase;
     font-size: 12px;
+    width: 100%;;
 }
 
 .summary button {
@@ -105,3 +108,115 @@ main {
     flex-direction: column;
     align-items: flex-end;
 } 
+
+
+/* DESKTOP */
+@media (min-width: 769px) {
+    header div.site_logo {
+        background-color: white;
+        opacity: 0.97;
+    }
+    
+    header div.nav nav ul.site_nav input::placeholder {
+        color: rgb(124, 124, 124);
+    }
+    
+    header nav ul.site_nav a, header div.nav nav ul.site_nav input::placeholder, header div.site_user div.checkout_login a, header div.site_user div.language a {
+        color: rgb(124, 124, 124);
+    }
+    
+    header nav ul.site_nav a, header div.nav nav ul.site_nav input::placeholder, header div.site_user div.checkout_login a, header div.site_user div.language a {
+        transition-duration: 0s;
+        transition-property: color;
+    }
+    
+    header nav ul.site_nav a:hover, header div.nav nav ul.site_nav input:hover, header div.site_user div.checkout_login a:hover, header div.site_user div.language a:hover {
+        color: black;
+    }
+    
+    main {
+        margin-bottom: 60vh;
+    }
+    
+    .cart {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20vh;
+        align-items: center;
+    }
+    
+    .cart p.title {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    
+    .specs {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 40%;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(185, 185, 185);
+    }
+    
+    
+    
+    .item {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 40%;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(185, 185, 185);
+    }
+    
+    .item button {
+        cursor: pointer;
+        width: 0%;
+        background-color: white;
+        border: 0px;
+        font-weight: bold;
+    }
+    
+    .summary {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 40%;
+    }
+    
+    .summary button {
+        border: 1px solid rgb(185, 185, 185);
+        background-color: white;
+        cursor: pointer;
+        margin-top: 20px;
+        padding: 10px 0px 10px 0px;
+        color: rgb(185, 185, 185);
+        font-weight: bold;
+        width: 30%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    
+    .summary button {
+        transition-duration: 0s;
+        transition-property: font-weight;
+    }
+    
+    .summary button:hover {
+        border: 1px solid black;
+        color: black;
+    }
+    
+    .summary div.summary_total {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    } 
+    }

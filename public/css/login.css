@@ -21,7 +21,7 @@ header nav ul.site_nav a:hover, header div.nav nav ul.site_nav input:hover, head
 }
 
 main {
-    margin-bottom: 60vh;
+    margin-bottom: 8vh;
 }
 
 header div.site_logo {
@@ -32,8 +32,7 @@ header div.site_logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
-    margin-top: 20vh;
+    margin-top: 9vh;
     align-items: center;
 }
 
@@ -46,7 +45,9 @@ header div.site_logo {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 30%;
+    width: 100%;
+    margin-left: 3vh;
+    margin-right: 3vh;
 }
 
 .login_form input {
@@ -89,10 +90,11 @@ header div.site_logo {
 .buttons {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 15px;
     justify-content: space-between;
     margin-top: 20px;
-    width: 30%;
+    align-items: center;
 }
 
 .forgotten_password a, .register_link a {
@@ -110,3 +112,119 @@ header div.site_logo {
     font-weight: bold;
 }
 
+/* DESKTOP */
+@media (min-width: 769px) {
+
+    header div.site_logo {
+        background-color: white;
+        opacity: 0.97;
+    }
+    
+    header div.nav nav ul.site_nav input::placeholder {
+        color: rgb(124, 124, 124);
+    }
+    
+    header nav ul.site_nav a, header div.nav nav ul.site_nav input::placeholder, header div.site_user div.checkout_login a, header div.site_user div.language a {
+        color: rgb(124, 124, 124);
+    }
+    
+    header nav ul.site_nav a, header div.nav nav ul.site_nav input::placeholder, header div.site_user div.checkout_login a, header div.site_user div.language a {
+        transition-duration: 0s;
+        transition-property: color;
+    }
+    
+    header nav ul.site_nav a:hover, header div.nav nav ul.site_nav input:hover, header div.site_user div.checkout_login a:hover, header div.site_user div.language a:hover {
+        color: black;
+    }
+    
+    main {
+        margin-bottom: 60vh;
+    }
+    
+    header div.site_logo {
+        background-color: white;
+    }
+    
+    .login_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20vh;
+        align-items: center;
+    }
+    
+    .login_box p {
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    .login_form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 30%;
+    }
+    
+    .login_form input {
+        border: 0px;
+        border-bottom: 1px solid rgb(185, 185, 185);
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .login_form input::placeholder {
+        color: rgb(185, 185, 185);
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    
+    .login_form button {
+        border: 1px solid rgb(185, 185, 185);
+        background-color: white;
+        cursor: pointer;
+        margin-top: 20px;
+        padding: 10px 0px 10px 0px;
+        color: rgb(185, 185, 185);
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    
+    .login_form button {
+        transition-duration: 0s;
+        transition-property: font-weight;
+    }
+    
+    .login_form button:hover {
+        border: 1px solid black;
+        color: black;
+    }
+    
+    
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 30%;
+    }
+    
+    .forgotten_password a, .register_link a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .forgotten_password a, .register_link a {
+        transition-duration: 0s;
+        transition-property: font-weight;
+    }
+    
+    .forgotten_password a:hover, .register_link a:hover {
+        color: black;
+        font-weight: bold;
+    }
+
+}

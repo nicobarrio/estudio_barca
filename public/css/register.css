@@ -21,6 +21,114 @@ header nav ul.site_nav a:hover, header div.nav nav ul.site_nav input:hover, head
 }
 
 main {
+    margin-bottom: 9vh;
+}
+
+header div.site_logo {
+    background-color: white;
+}
+
+.register_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 9vh;
+    align-items: center;
+}
+
+.register_box p {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.register_form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+
+.register_form input {
+    border: 0px;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.register_form input::placeholder {
+    color: rgb(185, 185, 185);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.register_form button {
+    border: 1px solid rgb(185, 185, 185);
+    color: rgb(185, 185, 185);
+    background-color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.register_form button {
+    transition-duration: 0s;
+    transition-property: font-weight;
+}
+
+.register_form button:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.buttons label {
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.buttons label a {
+    color: initial;
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+
+header div.site_logo {
+    background-color: white;
+    opacity: 0.97;
+}
+
+header div.nav nav ul.site_nav input::placeholder {
+    color: rgb(124, 124, 124);
+}
+
+header nav ul.site_nav a, header div.nav nav ul.site_nav input::placeholder, header div.site_user div.checkout_login a, header div.site_user div.language a {
+    color: rgb(124, 124, 124);
+}
+
+header nav ul.site_nav a, header div.nav nav ul.site_nav input::placeholder, header div.site_user div.checkout_login a, header div.site_user div.language a {
+    transition-duration: 0s;
+    transition-property: color;
+}
+
+header nav ul.site_nav a:hover, header div.nav nav ul.site_nav input:hover, header div.site_user div.checkout_login a:hover, header div.site_user div.language a:hover {
+    color: black;
+}
+
+main {
     margin-bottom: 60vh;
 }
 
@@ -101,4 +209,4 @@ header div.site_logo {
 .buttons label a {
     color: initial;
 }
-
+}
