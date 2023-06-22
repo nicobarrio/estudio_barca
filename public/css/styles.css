@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background-size: cover;
     font-family: "century-gothic", "helvetica", "arial", "lucida Grande", sans-serif; 
@@ -20,21 +21,28 @@ header div.site_logo {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: left;
-    z-index: 2;
     width: 100%;
 }
 
-header div.site_logo button {
+header div.site_logo div.hamburger {
     width: 15%;
-    opacity: 0;
-    border: 0px;
+    margin-left: 3vh;
+    place-self: center;
+    display: block;
     cursor: pointer;
+}
+
+header div.site_logo div.hamburger div.line {
+    height: 1px;
+    width: 20px;
+    background: black;
+    margin: 6px 0;
 }
 
 header div.site_logo a{
     display: flex;
-    align-items: center;
-    width: 85%;
+    place-content: center;
+    width: 60%;
     text-decoration: none;
     color: #000000;
     font-size: 16px;
@@ -47,20 +55,77 @@ header a:link {
     color: initial;
 }
 
+.openNav, .closeNav {
+    display: block;
+}
+
+header div.nav_desktop {
+    display: none;
+}
+
 header div.nav {
     position: fixed;
     display: flex; 
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 8vh;
+    flex-direction: column;
     z-index: 1;
     width: 100%;
-    height: 60%;
-    background-color: white;
+    height: 0;
+    background: white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+div.nav.active {
+    height: 100%
 }
 
 nav {
     margin-left: 3vh;
+}
+
+header div.nav div.site_logo {
+    position: fixed;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+}
+
+header div.nav div.site_logo a {
+    display: flex;
+    place-content: center;
+    width: 60%;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 3vh;
+    margin-bottom: 3vh;    
+}
+
+header div.nav div.site_logo div.hamburger {
+    width: 15%;
+    margin-left: 3vh;
+    display: block;
+    cursor: pointer;
+    
+}
+
+header div.nav div.site_logo div.hamburger div.line {
+    height: 1px;
+    width: 20px;
+    background: black;
+    margin: 6px 0;
+}
+
+header div.nav nav ul.site_nav {
+    opacity: 0;
+}
+
+header div.nav.active nav ul.site_nav {
+    opacity: 1;
 }
 
 header div.nav nav ul.site_nav input {
@@ -101,7 +166,8 @@ header nav ul.site_nav {
     flex-direction: column;
     list-style: none;
     gap: 8px;
-    margin-top: 3vh;
+    margin-top: 12vh;
+    transition: 0.5s;
 }
 
 header nav ul.site_nav a {
@@ -142,17 +208,17 @@ header div.site_user {
     position: fixed;
     display: flex; 
     flex-wrap: wrap;
+    z-index: 1;
     flex-direction: column;
     margin-top: 50vh;
     gap: 8px;
-    background-color: white;
     width: 100%;
-    height: 50%;
+    height: 0;
+    overflow: hidden;
 }
 
-header div.language {
-    margin-top: 32vh;
-    margin-left: 3vh    
+header div.site_user.active {
+    height: 50%
 }
 
 header div.site_user div.checkout_login {
@@ -160,8 +226,23 @@ header div.site_user div.checkout_login {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 8px;
-    margin-left: 3vh
+    margin-left: 3vh;
+    opacity: 0;
+    transition: 0.9s;
 }
+
+header div.language {
+    margin-top: 32vh;
+    margin-left: 3vh;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+header div.site_user.active div.checkout_login, header div.site_user.active div.language {
+    opacity: 1;
+}
+
+
 
 header div.site_user div.language a {
     text-decoration: none;
@@ -175,6 +256,10 @@ header div.site_user div.language a, header div.site_user div.checkout_login a{
 
 header div.site_user div.language a:hover, header div.site_user div.checkout_login a:hover {
     font-weight: bold;
+}
+
+header div.site_user_desktop div.checkout_login {
+    display: none;
 }
 
 header div.site_user div.checkout_login a {
@@ -301,10 +386,10 @@ footer div.footer_legal p a:hover {
         width: 100%;
     }
 
-    header div.site_logo button {
+    header div.site_logo div.hamburger {
         display: none;
     }
-    
+
     header div.site_logo a{
         display: flex;
         justify-content: center;
@@ -321,19 +406,36 @@ footer div.footer_legal p a:hover {
     header a:link {
         color: initial;
     }
-    
+
     header div.nav {
+        display: none;
+    }
+    
+    header div.nav_desktop {
         position: fixed;
         display: flex; 
         flex-wrap: wrap;
         flex-direction: row;
-        top: 18vh;
-        margin-right: 6vh;
+        top: 7vh;
         margin-left: 6vh; 
         z-index: 1;
+        background: none;
+        width: 10%;
+    }
+
+    header div.nav_desktop nav {
+        margin-left: 0px;
+    }
+
+    header div.nav div.site_logo {
+        display: none;
+    }
+
+    header div.nav_desktop nav button {
+        display: none;
     }
     
-    header div.nav nav ul.site_nav input {
+    header div.nav_desktop nav ul.site_nav input {
         font-size: 14px;
         background: none;
         border: 0px solid;
@@ -342,12 +444,12 @@ footer div.footer_legal p a:hover {
         font-size: 12px;
     }
     
-    header div.nav a {
+    header div.nav_desktop a {
         transition-duration: 0s;
         transition-property: font-weight;
     }
     
-    header div.nav a:hover {
+    header div.nav_desktop a:hover {
         font-weight: bold;
     }
     
@@ -365,7 +467,7 @@ footer div.footer_legal p a:hover {
     }
     
     
-    header nav ul.site_nav {
+    header div.nav_desktop nav ul.site_nav {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -373,57 +475,68 @@ footer div.footer_legal p a:hover {
         gap: 8px;
     }
     
-    header nav ul.site_nav a {
+    header div.nav_desktop nav ul.site_nav a {
         text-decoration: none;
         color: #000000;
     }
     
-    header div.nav div.nav_2 {
+    header div.nav_desktop div.nav_2 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         gap: 5px;
     }
     
-    nav a:link {
+    div.nav_desktop nav a:link {
         color: initial;
     }
     
-    nav ul {
+    div.nav_desktop nav ul {
         list-style: none;
     }
     
-    nav ul ul.dropdown{
+    div.nav_desktop nav ul ul.dropdown{
         display: none;
     }
     
-    nav ul li:hover > ul{
+    div.nav_desktop nav ul li:hover > ul{
         display: block;
         cursor: pointer;
     }
     
-    .dropdown {
+    div.nav_desktop .dropdown {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    
+
     header div.site_user {
+        display: none;
+    }
+    
+    header div.site_user_desktop {
         position: fixed;
         display: flex; 
         flex-wrap: wrap;
+        z-index: 0;
         flex-direction: column;
         margin-inline-start: auto;
-        top: 18vh;
         margin-right: 6vh;
         gap: 8px;
         inline-size: -webkit-fill-available;
+        background: none;
+        height: 10%;
+        margin-top: 0px;
+        top: 18vh;
     }
     
-    header div.site_user div.language {
+    header div.site_user_desktop div.language {
         text-align: right;
+        margin-top: 0px;
+        margin-left: 0px;
+        opacity: 1;
     }
     
-    header div.site_user div.checkout_login {
+    header div.site_user_desktop div.checkout_login {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -431,28 +544,28 @@ footer div.footer_legal p a:hover {
         gap: 8px;
     }
     
-    header div.site_user div.language a {
+    header div.site_user_desktop div.language a {
         text-decoration: none;
         color: #000000;
     }
     
-    header div.site_user div.language a, header div.site_user div.checkout_login a{
+    header div.site_user_desktop div.language a, header div.site_user_desktop div.checkout_login a{
         transition-duration: 0s;
         transition-property: font-weight;
     }
     
-    header div.site_user div.language a:hover, header div.site_user div.checkout_login a:hover {
+    header div.site_user_desktop div.language a:hover, header div.site_user_desktop div.checkout_login a:hover {
         font-weight: bold;
     }
     
-    header div.site_user div.checkout_login a {
+    header div.site_user_desktop div.checkout_login a {
         display: flex;
         text-decoration: none;
         color: #000000;
         justify-content: right;
     }
     
-    header div.site_user a:link {
+    header div.site_user_desktop a:link {
         color: initial;
     }
     

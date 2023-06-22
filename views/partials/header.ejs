@@ -1,9 +1,21 @@
 <header>
     <div class="site_logo">
-        <button> <i class="fi fi-ss-menu-burger"></i> </button>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <a href="/"><img src="/img/logo-header.png"></a>
+        <div class="hamburger"></div>
     </div>
-    <div class="nav">
+    <div id="nav" class="nav">
+        <div class="site_logo">
+            <div id="hamburger2" class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <a href="/"><img src="/img/logo-header.png"></a>
+            <div class="hamburger"></div>
+        </div>
             <nav>
                 <ul class="site_nav">
                     <form class="searcher" action="/products/searcher" method="get">
@@ -83,4 +95,102 @@
             <a href ="/cart">Carrito (0)</a>
         </div>
     </div>
+
+    <div id="nav" class="nav_desktop">
+            <nav>
+                <ul class="site_nav">
+                    <form class="searcher" action="/products/searcher" method="get">
+                        <input type="text" placeholder="Buscar" id="searcher" name="searcher" class="input"> 
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <li>
+                        <a href="/products"><span>Mobiliario</span></a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href=""><span>Mesas</span></a>   
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href=""><span>Mesas de comedor</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>Mesas de living</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>Mesas de dormitorio</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><span>Sillas</span></a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href=""><span>Sillas</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>Banquetas</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>Bancos</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><span>Cómodas y consolas</span></a> 
+                            </li>
+                            <li>
+                                <a href=""><span>Estanterías</span></a> 
+                            </li>
+                            <li>
+                                <a href=""><span>Escritorios</span></a> 
+                            </li>
+                            <li>
+                                <a href="/products"><span>Ver todo</span></a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Arquitectura</a> 
+                    </li>
+                    <li>
+                        <a href="">Nosotros</a>  
+                    </li>
+                    <li>
+                        <a href="">Estudio</a> 
+                    </li>
+                    <li>
+                        <a href="">Prensa</a> 
+                    </li>
+                </ul>
+            </nav>
+        
+    </div>
+    <div class="site_user_desktop">
+        <div class="language">
+            <a href="">ES</a>
+            <a href="">EN</a>
+        </div>
+        <div class="checkout_login">
+            <a href ="/login">Iniciar Sesión</a>
+            <a href ="/cart">Carrito (0)</a>
+        </div>
+    </div>
 </header>
+
+<script>
+    hamburger = document.querySelector(".hamburger")
+    hamburger.onclick = function () {
+        nav = document.querySelector(".nav");
+        nav.classList.toggle("active");
+        nav2 = document.querySelector(".site_user");
+        nav2.classList.toggle("active")
+    }
+    hamburger2 = document.querySelector("#hamburger2")
+    hamburger2.onclick = function () {
+        nav = document.querySelector(".nav");
+        nav.classList.toggle("active");
+        nav2 = document.querySelector(".site_user");
+        nav2.classList.toggle("active")
+    }
+</script>
