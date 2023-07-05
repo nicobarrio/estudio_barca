@@ -1,0 +1,19 @@
+.sidebar_box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    min-height: 100vh;
+    border-right: 1px solid rgb(185, 185, 185);
+}
+
+.logo {
+    width: 50%;
+    margin-top: 20%;
+}
+
+.profile {
+    margin-bottom: 20%;
+}

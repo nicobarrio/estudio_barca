@@ -17,7 +17,7 @@ app.use(express.json());
 
 // CONFIGURAR PUERTO //
 app.listen(port, () => {
-    console.log('Server 3060 is working');
+    console.log('Server ' + port + ' is working');
 });
 
 // CONFIGURAR EJS //
