@@ -182,6 +182,10 @@ header div.nav div.nav_2 {
     gap: 5px;
 }
 
+header div.nav nav ul.site_nav input::placeholder {
+    font-family: "century-gothic", "helvetica", "arial", "lucida Grande", sans-serif;
+}
+
 nav a:link {
     color: initial;
 }
@@ -508,6 +512,10 @@ footer div.footer_legal p a:hover {
     div.nav_desktop .dropdown {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    div.nav_desktop nav ul.site_nav input::placeholder {
+        font-family: "century-gothic", "helvetica", "arial", "lucida Grande", sans-serif; 
     }
 
     header div.site_user {

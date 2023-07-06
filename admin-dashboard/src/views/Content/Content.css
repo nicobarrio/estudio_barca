@@ -1,0 +1,16 @@
+.content_box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.cards {
+    gap: 5%;
+}
+
+.panels {
+    gap: 5%;
+}

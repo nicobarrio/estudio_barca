@@ -1,5 +1,6 @@
 import './Sidebar.css';
 import logo from '../../../assets/logo-header.png';
+import Profile from './subcomponents/Profile/Profile.jsx'
 
 const Sidebar = () => {
     return (
@@ -13,8 +14,7 @@ const Sidebar = () => {
             <p>Reports</p>
         </nav>
         <div className="profile">
-            <p>Admin</p>
-            <p>nicolas@estudiobarca.com</p>
+            <Profile name='Nicolás Barrio' email="nico@estudiobarca.com" />
         </div>
     </div>
     )
