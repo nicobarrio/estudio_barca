@@ -1,6 +1,19 @@
 .card_box {
-    width: 25%;
-    height: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    height: 80%;
     background-color: white;
     border: 1px solid black;
+    margin-bottom: 5vh;
+    align-items: center;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 22px;
+}
+ 
+.category {
+    font-weight: bold;
 }

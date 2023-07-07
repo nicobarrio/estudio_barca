@@ -3,7 +3,7 @@ import Searcher from './subcomponents/Searcher/Searcher.jsx';
 
 const Topbar = (props) => {
     return (
-        <div>
+        <div className="topbar">
             <div>
                 <h1>Welcome, {props.name} </h1>
             </div>

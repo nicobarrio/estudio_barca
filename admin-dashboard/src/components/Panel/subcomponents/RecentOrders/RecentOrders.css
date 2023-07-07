@@ -1,0 +1,23 @@
+.panel_orders {
+    display: flex;
+    flex-direction: column;
+    width: 65.25%;
+    height: 60%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.panel_orders p, .orders p {
+    font-weight: bold;
+    align-self: center;
+}
+
+.orders {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.orders ul {
+    list-style-type: none; 
+}
