@@ -1,5 +1,15 @@
 .profile {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.profile div img {
+    width: 20%;
+    border-radius: 10%;
+}
+
+.profile div.data {
+    display: flex;
     flex-direction: column;
 }

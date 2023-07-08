@@ -5,14 +5,29 @@ import Card from '../../components/Card/Card.jsx';
 import Panel from '../../components/Panel/Panel.jsx';
 
 const Content = () => {
+    let arrayCards = [
+        {
+            number: "30",
+            category: "Products"
+        },
+        {
+            number: "23",
+            category: "Orders"
+        },
+        {
+            number: "250.000",
+            category: "Profit"
+        }
+    ]
+
     return (
         <div className="content_box">
             <Topbar name='Nicolás' />    
             <Button button='Create new product'/>
             <div class="cards">
-                <Card number='30' category='Products'/> 
-                <Card number='23' category='Orders'/>
-                <Card number='$250.000' category='Profit'/>
+                { 
+                arrayCards.map((card, i) => <Card number={card.number} category={card.category}/> ) 
+                }
             </div>
             <Panel />    
 

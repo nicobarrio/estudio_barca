@@ -8,7 +8,7 @@ const TopProducts = (props) => {
             <div className="products">
                 <ul>
                     <p>Product name</p>
-                    <li> {props.product} </li>
+                    <li> {props.name} </li>
                 </ul>
                 <ul>
                     <p>Price</p>
