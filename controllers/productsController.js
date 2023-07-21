@@ -36,10 +36,17 @@ const productsController = {
     //       });
     // },
     detail: (req, res) => {
-        db.Product.findByPk(req.params.id, {include: [{association: 'category'}]})
-            .then(function(product) {
-                res.render(path.join(__dirname, '../views/products/detail.ejs'), { product:product })
-            })
+        db.Product.findAll()
+        .then(function(products) {
+            db.Product.findByPk(req.params.id, {include: [{association: 'category'}]})
+                .then(function(product) {
+                    res.render(path.join(__dirname, '../views/products/detail.ejs'), { products, product })
+                })
+        })
+        .catch(err => {
+            console.log(err);
+            res.send('An error occurred');
+        });
     },
     create: (req, res) => {
         db.Category.findAll()

@@ -10,14 +10,6 @@
   <!-- HEADER -->
 
   <main>
-    <div class="admin_buttons">
-      <a href="/products/edit/<%= product.id %>">
-        <button>Editar</button>
-      </a>
-      <form action="/products/delete/<%= product.id %>">
-        <button type="submit">Borrar</button>
-      </form>
-    </div>
     <div class="product">
       <img src="/img/products/<%= product.image %>">
       <section class="product_detail">
@@ -32,14 +24,67 @@
           <input type="number" name="quantity" value="1" min="1" max="10"> -->
           <button class="add_to_cart" type="submit">Añadir al carrito</button>
         </form>
-      </section> 
+        <div class="admin_buttons">
+          <a href="/products/edit/<%= product.id %>">
+            <button>Editar</button>
+          </a>
+          <form action="/products/delete/<%= product.id %>">
+            <button type="submit">Borrar</button>
+          </form>
+        </div>
+      </section>
     </div>
-    <img src="/img/products/<%= product.images %>" class="extra_images">
+    <!-- <img src="/img/products/<%= product.images %>" class="extra_images"> -->
 
     <!--
         <img src="<%= product.image %>" class="product_image">
         <img src="<%= product.images %>" class="product_image">
       -->
+<div>
+  <div class="plus-sign">
+    <div class="horizontal-line"></div>
+    <div class="vertical-line"></div>
+  </div>
+      <% let currentIndex = -1; %>
+      <% let currentProductId = product.id; %>
+      
+      <% products.forEach((p, index) => { %>
+          <% if (p.id === currentProductId) { %>
+              <% currentIndex = index; %>
+          <% } %>
+      <% }); %>
+      
+      <% let counterDesktop = 0; %>
+      <section class="product_grid_desktop">
+          <% products.slice(0, currentIndex).concat(products.slice(currentIndex + 1)).reverse().forEach((product) => { %>
+              <% if (counterDesktop < 3) { %>
+                  <article class="product_card">
+                      <a href="/products/<%= product.id %>">
+                          <img src="/img/products/<%= product.image %>" class="product_image">
+                          <a href="#" class="product_title"><span><%= product.name %></span></a>
+                      </a>
+                  </article>
+              <% } %>
+              <% counterDesktop++; %>
+          <% }); %>
+      </section>
+      
+      <% let counterMobile = 0; %>
+      <section class="product_grid_mobile">
+          <% products.slice(0, currentIndex).concat(products.slice(currentIndex + 1)).reverse().forEach((product) => { %>
+              <% if (counterMobile < 2) { %>
+                  <article class="product_card_mobile">
+                      <a href="/products/<%= product.id %>">
+                          <img src="/img/products/<%= product.image %>" class="product_image">
+                          <a href="#" class="product_title"><span><%= product.name %></span></a>
+                      </a>
+                  </article>
+              <% } %>
+              <% counterMobile++; %>
+          <% }); %>
+      </section>
+</div>
+
   </main>
 
   <!-- FOOTER -->
